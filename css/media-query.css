@@ -1,0 +1,214 @@
+@media (max-width:1603px){
+     .tab-content .card-fixed {
+        width: 129.32px !important;
+    }
+    .main-company{
+        margin-top: 105px !important;  
+    }
+}
+@media (max-width:1595px){
+    .tab-content .card-fixed {
+       width: 125.32px !important;
+   }
+   .card-tasks-2, .card-tasks{
+    padding:36px !important;
+   }
+}
+@media (max-width:1564px){
+    .tab-content .card-fixed {
+       width:109.32px !important;
+       padding: 0px 0px !important;
+   }
+   .card-tasks-2, .card-tasks{
+    padding:45px !important;
+   }
+}
+@media (max-width:1500px){
+    .card-1 .Summary-button-2 {
+        padding: 9px 10px !important;
+    }
+   .card-tasks-2, .card-tasks{
+        margin-top:30px;
+   }
+}
+@media (max-width:1436px){
+    .Brian .col-lg-3{
+        padding: 0px;
+    }
+    .tab-content .card-fixed {
+        width:106.32px !important;
+    }
+   .card-tasks-2, .card-tasks{
+        margin-top:60px !important;
+   }
+}
+@media (max-width:1300px){
+    .main .Backend-app {
+        top: 235px;
+    }
+    .header .menu-icon{
+        left: 19%;
+    }
+    .Brian .col-lg-11{
+        width: 85.666667%;
+    }
+    .Brian .col-lg-9{
+        width: 73.666667%;
+    }
+    .Brian .Brian-messages p{
+        width: 62%;
+    }
+    .Brian .col-lg-3{
+        width: 26%;
+    }   
+    .card-header .col-lg-6{
+        width: 60%;
+    }
+    .tab-content .card-fixed {
+        width: 91.32px !important;
+    }
+    .card-1 .Summary-button{
+        padding: 9px 3px;
+    }
+    .Group-Meeting .col-lg-9{
+        width:81%;
+    }
+    .Group-Meeting  .col-lg-3{
+        width:10%;
+    }
+    .card-tasks-2, .card-tasks{
+        margin-top:126px !important;
+   }
+   .pills .col-lg-7{
+    width: 40%;
+   }
+   .pills .col-lg-5 {
+    width: 58.666667%;
+    }
+    .pills .col-lg-6 {
+        width: 60%;
+    }
+    .card .Design {
+        padding: 0px 0px 0px 10px !important;
+    }
+}
+@media (max-width:1200px){
+    .header .menu-icon {
+        left: 23%;
+    }
+    .Brian .col-lg-11 {
+        width: 69.666667%;
+    }
+    .Brian .Welcome{
+        font-size: 30px;
+    }
+    .Brian .Brian-messages p{
+        font-size: 11px;
+    }
+    .main .Backend-app {
+        top: 226px;
+    }
+    .Brian .col-lg-9 {
+        width: 65.666667%;
+    }
+    .Brian .col-lg-3 {
+        width: 33%;
+    }
+    .text-center{
+        font-size: 15px;
+    }
+    .card .Summary-button{
+        padding: 4px 15px !important;
+    }
+    .tab-content .card-fixed {
+        width: 79.32px !important;
+    }
+    .card-tasks-2, .card-tasks {
+        padding: 35px !important;
+        margin-top: 219px !important;
+    }
+    .pills .col-lg-7 {
+        width: 39%;
+    }
+    .pills .col-lg-5 {
+        width: 60.666667%;
+    }
+    .pills .col-lg-6 {
+        width: 62%;
+    }
+}
+@media (max-width:1025px){
+    .header .menu-icon {
+        left: 26%;
+    }
+    .Brian .Welcome {
+        font-size: 25px;
+    }
+    .Brian .col-lg-9 {
+        width: 61.666667%;
+        padding: 0px;
+    }
+    .Brian .col-lg-3 {
+        width: 38%;
+    }
+    .Brian-messages svg{
+        margin-left: 12px !important;
+    }
+    .Brian .Brian-messages p {
+        width: 82%;
+    }
+    .text-center {
+        font-size: 10px;
+    }
+    .card-header .col-lg-6 {
+        width: 63%;
+        padding: 0px !important;
+    }
+    .main .Backend-app {
+        top: 228px;
+    }
+    .card .col-lg-6{
+        width: 100%;
+    }
+    .Backend-app-active{
+        right: 404px !important;
+    }
+    .card-header .col-lg-1{
+        padding: 0px;
+        width: 0px;
+    }
+    .card .col-lg-4 {
+        width: 50.333333%;
+    }
+    .col-lg-8 {
+        width: 35.666667%;
+    }
+    .card-Overview {
+        margin-bottom: 10px;
+    }
+    .tab-content .card-fixed {
+        width: 129.32px !important;
+    }
+    .first{
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+    .card-tasks-2, .card-tasks {
+        margin-top: 0px !important;
+    }
+    .card-body .card-38,.card-body .card-24,.card-body .card-17,.card-body .card-21 {
+        font-size: 57px;
+    }
+    .text-center {
+        font-size: 9px;
+    }
+    .Brian .Welcome {
+        font-size: 20px;
+    }
+    .Brian .Brian-messages p {
+        font-size: 8px;
+    }
+    .tab-content .card-fixed {
+        width: 114.32px !important;
+    }
+}
