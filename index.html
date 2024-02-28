@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuse Angular - Angular Template and Starter Kit</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/media-query.css">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<!-- https://angular-material.fusetheme.com/dashboards/project -->
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-end py-2">
+        <div class="menu-icon p-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+            preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </path>
+          </svg>
+        </div>
+        <div class="whith d-flex">
+          <img src="img/US.svg" alt="" />
+        </div>
+        <div class="whith">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+            preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15">
+            </path>
+          </svg>
+        </div>
+        <div class="whith d-flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="whith">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+            preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z">
+            </path>
+          </svg>
+        </div>
+        <div class="whith">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+            preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z">
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- slide left menu -->
+  <div id="navigator" class="sidebar">
+    <div class="company-logo">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-3">
+          <a href="index.html"><img src="img/logo.svg" alt="" /></a>
+        </div>
+        <div class="col-5 p-0">
+          <div class="row ps-2">
+            <div class="notification notification-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="position-relative" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+                preserveAspectRatio="xMidYMid meet" focusable="false">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0">
+                </path>
+              </svg>
+              <span
+                class="position-absolute rounded-circle d-flex justify-content-center text-white align-items-center">3
+              </span>
+            </div>
+            <div class="notification notification-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="position-relative" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+                preserveAspectRatio="xMidYMid meet" focusable="false">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z">
+                </path>
+              </svg>
+              <span class="position-absolute rounded-circle"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Brian-Hughes d-flex p-3 flex-column align-items-center">
+      <div class="img-BrianHughes">
+        <img src="img/brian-hughes.jpg" alt="" />
+      </div>
+      <p class="text-white Brian-name mb-0">Brian Hughes</p>
+      <p class="Brian-email m-1">
+        <a href="mailto:hughes.brian@company.com">hughes.brian@company.com</a>
+      </p>
+    </div>
+    <div class="main-Project d-flex flex-column mt-2">
+      <div class="DASHBOARDS">
+        <span>DASHBOARDS</span>
+        <p class="Brian-email m-1 my-0 mx-4 fw-semibold">
+          Unique dashboard designs
+        </p>
+      </div>
+      <div class="DASHBOARDS-2 mt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75">
+          </path>
+        </svg>
+        &nbsp; Project
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"></path>
+        </svg>
+        &nbsp; Analytics
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z">
+          </path>
+        </svg>
+        &nbsp; Finance
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+          </path>
+        </svg>
+        &nbsp; Crypto
+      </div>
+    </div>
+    <div class="main-Project d-flex flex-column mt-2">
+      <div class="DASHBOARDS">
+        <span>APPLICATIONS</span>
+        <p class="Brian-email-2 m-1 my-0 mx-4 fw-semibold">
+          Custom mcKi-e application designs
+        </p>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5">
+          </path>
+        </svg>
+        &nbsp; Academy
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z">
+          </path>
+        </svg>
+        &nbsp; Chat
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z">
+          </path>
+        </svg>
+        &nbsp; Contacts
+      </div>
+      <div class="DASHBOARDS-3" id="click" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z">
+              </path>
+            </svg>
+            &nbsp; ECommerce
+          </div>
+          <div class="arrow">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Inventory</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z">
+          </path>
+        </svg>
+        &nbsp; File Manager
+      </div>
+      <div class="DASHBOARDS-3" id="click-2" data-bs-toggle="collapse" data-bs-target="#axit" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z">
+              </path>
+            </svg>
+            &nbsp; Help Center
+          </div>
+          <div class="arrow-2">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Home</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">FAQs</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Guides</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Support</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+          </path>
+        </svg>
+        &nbsp; Mailbox
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10">
+          </path>
+        </svg>
+        &nbsp; Notes
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125z">
+          </path>
+        </svg>
+        &nbsp; Scrumtxxlrd
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        &nbsp; Tasks
+      </div>
+    </div>
+    <div class="main-Project d-flex flex-column mt-2">
+      <div class="DASHBOARDS">
+        <span>PAGES</span>
+        <p class="Brian-email-2 m-1 my-0 mx-4 fw-semibold">
+          Custom made page designs
+        </p>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+        </svg>
+        &nbsp; Activities
+      </div>
+      <div class="DASHBOARDS-3" id="click-3" data-bs-toggle="collapse" data-bs-target="#axit-3" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z">
+              </path>
+            </svg>
+            &nbsp;Authentication
+          </div>
+          <div class="arrow-3">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-3">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Sign in</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Sign up</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Sign out</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Forgot</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Reset password</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Unlock session</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Confirmation required</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3" id="click-4" data-bs-toggle="collapse" data-bs-target="#axit-4" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            &nbsp;Coming Soon
+          </div>
+          <div class="arrow-4">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-4">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Classic</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Modem</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Modem Reversed</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Split Screen</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Split Screen Reversed</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Fullscreen</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Fultscreen Reversed</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3" id="click-5" data-bs-toggle="collapse" data-bs-target="#axit-5" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+            </svg>
+            &nbsp;Error
+          </div>
+          <div class="arrow-5">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-5">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">404</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">500</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3" id="click-6" data-bs-toggle="collapse" data-bs-target="#axit-6" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z">
+              </path>
+            </svg>
+            &nbsp;Invoice
+          </div>
+          <div class="arrow-6">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-6">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Printable</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z">
+          </path>
+        </svg>
+        &nbsp;Maintenance
+      </div>
+      <div class="DASHBOARDS-3" id="click-7" data-bs-toggle="collapse" data-bs-target="#axit-7" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z">
+              </path>
+            </svg>
+            &nbsp;Pricing
+          </div>
+          <div class="arrow-7">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-7">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Modem</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Simple</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Single</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Table</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z">
+          </path>
+        </svg>
+        &nbsp;Profile
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z">
+          </path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+        </svg>
+        &nbsp;Settings
+      </div>
+    </div>
+    <div class="main-Project d-flex flex-column mt-2 pb-4 border-bottom">
+      <div class="DASHBOARDS">
+        <span>USER INTERFACE</span>
+        <p class="Brian-email-2 m-1 my-0 mx-4 fw-semibold">
+          Building blocks of the Ul & UX
+        </p>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3">
+          </path>
+        </svg>
+        &nbsp; MaterialComponen
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3">
+          </path>
+        </svg>
+        &nbsp; Fuse Components
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3">
+          </path>
+        </svg>
+        &nbsp; Other Components
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z">
+          </path>
+        </svg>
+        &nbsp; TailwindCSS
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+          </path>
+        </svg>
+        &nbsp; Advanced Search
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z">
+          </path>
+        </svg>
+        &nbsp; Animations
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16.5 8.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v8.25A2.25 2.25 0 006 16.5h2.25m8.25-8.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-7.5A2.25 2.25 0 018.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 00-2.25 2.25v6">
+          </path>
+        </svg>
+        &nbsp; Cards
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z">
+          </path>
+        </svg>
+        &nbsp; Colors
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z">
+          </path>
+        </svg>
+        &nbsp; ConfirmationDialog
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5">
+          </path>
+        </svg>
+        &nbsp; Datatable
+      </div>
+      <div class="DASHBOARDS-3" id="click-8" data-bs-toggle="collapse" data-bs-target="#axit-8" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10">
+              </path>
+            </svg>
+            &nbsp;Forms
+          </div>
+          <div class="arrow-8">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-8">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Fields</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Layouts</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Wizards</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3" id="click-9" data-bs-toggle="collapse" data-bs-target="#axit-9" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
+            </svg>
+            &nbsp;Icons
+          </div>
+          <div class="arrow-9">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-9">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Heroicons Outline</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Heroicons Solid</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Heroicons Mini</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Material Twotone</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Material Outüne</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Material Solid</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Feather</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3" id="click-10" data-bs-toggle="collapse" data-bs-target="#axit-10" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z">
+              </path>
+            </svg>
+            &nbsp;Page Layouts
+          </div>
+          <div class="arrow-10">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-10">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Overview</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Empty</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Carded</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Simple</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125">
+          </path>
+        </svg>
+        &nbsp; Typography
+      </div>
+    </div>
+    <div class="main-Project d-flex flex-column mt-2 pb-4 border-bottom">
+      <div class="DASHBOARDS">
+        <span>DOCUMENTATION</span>
+        <p class="Brian-email-2 m-1 my-0 mx-4 fw-semibold">
+          Everything you need to know about Fuse
+        </p>
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46">
+          </path>
+        </svg>
+        &nbsp;Changelog
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25">
+          </path>
+        </svg>
+        &nbsp;Guides
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3">
+          </path>
+        </svg>
+        &nbsp; MaterialComponen
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3">
+          </path>
+        </svg>
+        &nbsp; Fuse Components
+      </div>
+      <div class="DASHBOARDS-3 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3">
+          </path>
+        </svg>
+        &nbsp; Other Components
+      </div>
+    </div>
+    <div class="main-Project d-flex flex-column mt-2">
+      <div class="DASHBOARDS">
+        <span>NAVIGATION FEATURES</span>
+        <p class="Brian-email-2 m-1 my-0 mx-4 fw-semibold">
+          Collapsable levels & styles
+        </p>
+      </div>
+      <div class="DASHBOARDS-3" id="click-11" data-bs-toggle="collapse" data-bs-target="#axit-11" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            &nbsp;Level 0
+          </div>
+          <div class="arrow-11">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-11">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Level 1</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3" id="click-12" data-bs-toggle="collapse" data-bs-target="#axit-12" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="d-flex justify-content-between">
+          <div class="svg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+              preserveAspectRatio="xMidYMid meet" focusable="false">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            &nbsp;Level 0
+          </div>
+          <div class="arrow-12">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="axit-12">
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Level 1.1</a>
+        </div>
+        <div class="DASHBOARDS-3 ps-5">
+          <a href="javackript:void(0);" class="text-white">Level 1.2</a>
+        </div>
+      </div>
+      <div class="DASHBOARDS-3 ps-2 mt-1 mb-3 d-flex flex-row justify-content-between align-items-center">
+        <svg class="svg-data" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+          focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46">
+          </path>
+        </svg>
+        <p class="text-white dashbords-3-data">
+          A multi line navigation item title which works just fine
+        </p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center opacity-25 align-items-center max-width">
+      <img src="img/logo-text-on-dark.svg" alt="" />
+    </div>
+  </div>
+
+  <!-- Welcome back, Brian! -->
+  <section class="main border-bottom">
+    <div class="Welcome-back-Brian">
+      <div class="row p-0">
+        <div class="Brian position-relative">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="row align-items-center">
+                <div class="Brian-img p-0">
+                  <img src="img/brian-hughes.jpg" alt="" class="rounded-circle" />
+                </div>
+                <div class="Brian-messages col-lg-11">
+                  <h1 class="Welcome">Welcome back, Brian!</h1>
+                  <div class="row align-items-center">
+                    <svg class="p-0 mx-2 ms-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="currentColor" aria-hidden="true" fit="" height="100%" width="100%"
+                      preserveAspectRatio="xMidYMid meet" focusable="false">
+                      <path fill-rule="evenodd"
+                        d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="m-0 p-0">
+                      You have 2 new messages and 15 new tasks
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 pe-0 d-flex align-items-center justify-content-end">
+              <div class="row">
+                <div class="Brian-col-1 col-lg-6 p-0">
+                  <button class="Brian-btn d-flex align-items-center rounded-pill">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                      focusable="false">
+                      <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z">
+                      </path>
+                      <path
+                        d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z">
+                      </path>
+                    </svg>
+                    <span class="ms-2 text-white">Messages</span>
+                  </button>
+                </div>
+                <div class="Brian-col-2 col-lg-6 ps-2">
+                  <button class="Brian-btn d-flex align-items-center rounded-pill">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                      focusable="false">
+                      <path fill-rule="evenodd"
+                        d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="ms-2 text-white">Settings</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute Backend-app d-flex rounded-top border border-bottom-0">
+          ACME Corp. Backend App
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" fit=""
+            height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="Backend-app-NONE flex-column">
+          <a href="javascript:void(0);">ACME Corp. Backend App</a>
+          <a href="javascript:void(0);">ACME Corp. Frontend App</a>
+          <a href="javascript:void(0);">Creapond</a>
+          <a href="javascript:void(0);">Withinpixels</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Brian chart -->
+  <section class="main main-bg pb-5">
+    <div class="Welcome-back-Brian">
+      <div class="mb-3 d-flex p-3 pb-0 ps-0 main-bg border-bottom" id="pills-tab" role="tablist">
+        <div class="Brian-item" role="presentation">
+          <button class="active main-bg" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            role="tab" aria-controls="pills-home" aria-selected="true">
+            Home
+          </button>
+        </div>
+        <div class="Brian-item" role="presentation">
+          <button class="mx-3 main-bg" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            role="tab" aria-controls="pills-profile" aria-selected="false">
+            Budget
+          </button>
+        </div>
+        <div class="Brian-item" role="presentation">
+          <button class="me-3 main-bg" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            role="tab" aria-controls="pills-contact" aria-selected="false">
+            Team
+          </button>
+        </div>
+      </div>
+
+      <!-- first  page -->
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          tabindex="0">
+          <div class="row pt-2">
+            <div class="col-lg-3 ps-0">
+              <div class="card">
+                <div class="card-header p-0">
+                  <div class="row justify-content-between align-items-center">
+                    <p class="m-0 fw-semibold col-lg-6">Summary</p>
+                    <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <p class="card-21 m-0 text-center">21</p>
+                  <p class="card-20 text-center">Due Tasks</p>
+                </div>
+                <p class="text-center">Completed:13</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-header p-0">
+                  <div class="row justify-content-between align-items-center">
+                    <p class="m-0 fw-semibold col-lg-6">Overdue</p>
+                    <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <p class="card-17 m-0 text-center">17</p>
+                  <p class="card-16 text-center">Tasks</p>
+                </div>
+                <p class="text-center">From yesterday:9</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-header p-0">
+                  <div class="row justify-content-between align-items-center">
+                    <p class="m-0 fw-semibold col-lg-6">Issues</p>
+                    <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <p class="card-24 m-0 text-center">24</p>
+                  <p class="card-23 text-center">Open</p>
+                </div>
+                <p class="text-center">Closed today:19</p>
+              </div>
+            </div>
+            <div class="col-lg-3 Implemented">
+              <div class="card">  
+                <div class="card-header p-0">
+                  <div class="row justify-content-between align-items-center">
+                    <p class="m-0 fw-semibold col-lg-6">Features</p>
+                    <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <p class="card-38 m-0 text-center">38</p>
+                  <p class="card-37 text-center">Proposals</p>
+                </div>
+                <p class="text-center">Implemented:16</p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="row justify-content-between align-items-center my-2">
+                <p class="my-0 col-lg-8">Github Issues Summary</p>
+                <div class="d-flex col-lg-4 justify-content-end">
+                  <button class="Summary-button rounded-pill">
+                    Last Week
+                  </button>
+                  <button class="Summary-button-2 rounded-pill ms-1">
+                    This Week
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <p class="Closed mb-1 ms-3">New vs. Closed</p>
+                  <div id="chart-2"></div>
+                </div>
+                <div class="col-lg-6 ps-4">
+                  <p class="Overview">Overview</p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card-Overview">
+                        <h2 class="new-Issues text-center m-0">214</h2>
+                        <p class="Issues text-center fw-semibold">
+                          New Issues
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card-Overview-1">
+                        <h2 class="new-Issues new-Issues-1 text-center m-0">
+                          75
+                        </h2>
+                        <p class="Issues Issues-1 text-center fw-semibold">
+                          Closed
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-lg-2 m-2 card-fixed d-flex justify-content-center align-items-center flex-column">
+                      <h3 class="r m-0">3</h3>
+                      <p class="m-0 text-center">Fixed</p>
+                    </div>
+                    <div class="col-lg-2 m-2 card-fixed d-flex justify-content-center align-items-center flex-column">
+                      <h3 class="r m-0">4</h3>
+                      <p class="m-0 text-center">Won't Fix</p>
+                    </div>
+                    <div class="col-lg-2 m-2 card-fixed d-flex justify-content-center align-items-center flex-column">
+                      <h3 class="r m-0">8</h3>
+                      <p class="m-0 text-center">Re-opened</p>
+                    </div>
+                    <div class="col-lg-2 m-2 card-fixed d-flex justify-content-center align-items-center flex-column">
+                      <h3 class="r m-0">6</h3>
+                      <p class="m-0 text-center">Needs Triage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="row justify-content-between">
+                <div class="col-6 card-1 first">
+                  <div class="row p-3 ps-4 pe-4 justify-content-between align-items-center my-2">
+                    <p class="my-0 col-lg-6 Distribution">Task Distribution</p>
+                    <div class="d-flex col-lg-6 p-0 justify-content-end">
+                      <button class="Summary-button rounded-pill">
+                        Last Week
+                      </button>
+                      <button class="Summary-button-2 rounded-pill ms-1">
+                        This Week
+                      </button>
+                    </div>
+                  </div>
+                  <div id="chart" class="p-2"></div>
+                  <div class="row">
+                    <div class="col-lg-6 pe-0">
+                      <div class="card-tasks border d-flex justify-content-center align-items-center flex-column">
+                        <h4 class="fs-2 fw-bold">594</h4>
+                        <p class="m-0">New tasks</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 ps-0">
+                      <div class="card-tasks-2 border d-flex justify-content-center align-items-center flex-column">
+                        <h4 class="fs-2 fw-bold">287</h4>
+                        <p class="m-0">Completed tasks</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 card first">
+                  <div class="row justify-content-between align-items-center my-2">
+                    <p class="my-0 col-lg-8">Schedule</p>
+                    <div class="d-flex col-lg-4 justify-content-end pe-0">
+                      <button class="Summary-button-2 rounded-pill ms-1">
+                        Today
+                      </button>
+                      <button class="Summary-button rounded-pill">
+                        Tomorrow
+                      </button>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting border-bottom pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">Group Meeting</h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">in 32 minutes</p>
+                          <i class="fa-solid fa-location-dot icon-fot px-1 py-1 ps-3"></i>
+                          <p class="mb-1 ms-4">Conference room 1B</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting border-bottom pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">Coffee Break</h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">10:30 AM</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting border-bottom pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">Public Beta Release</h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">11:00 AM</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting border-bottom pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">Lunch</h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">12:10 PM</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting border-bottom pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">Dinner with David</h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">05:30 PM</p>
+                          <i class="fa-solid fa-location-dot icon-fot px-1 py-1 ps-3"></i>
+                          <p class="mb-1 ms-4">Magnolia</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting border-bottom pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">Jane's Birthday Party</h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">07:30 PM</p>
+                          <i class="fa-solid fa-location-dot icon-fot px-1 py-1 ps-3"></i>
+                          <p class="mb-1 ms-4">Home</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Group-Meeting pb-2 pt-2">
+                    <div class="row justify-content-between align-items-center pt-3">
+                      <div class="col-lg-9">
+                        <div class="Group">
+                          <h6 class="text-black">
+                            Overseer's Retirement Party
+                          </h6>
+                          <i class="fa-solid fa-clock icon-fot pt-1"></i>
+                          <p class="mb-1 ms-2 minutes">09:30 PM</p>
+                          <i class="fa-solid fa-location-dot icon-fot px-1 py-1 ps-3"></i>
+                          <p class="mb-1 ms-4">Overseer's room</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 pe-3">
+                        <div class="d-flex justify-content-end align-items-center angle-right">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second page -->
+        <div class="tab-pane fade second" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card my-3">
+                <h5>Budget Distribution</h5>
+                <div id="chart-9"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 pills">
+              <div class="card my-3 pb-0">
+                <div class="row justify-content-between align-items-center">
+                  <p class="m-0 fw-semibold col-lg-6 p-0">Weekly Expenses</p>
+                  <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-5 Expenses p-0">
+                    <h3 class="mb-1 fs-4">$17,663.00</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+                      <path fill-rule="evenodd"
+                        d="M1.72 5.47a.75.75 0 011.06 0L9 11.69l3.756-3.756a.75.75 0 01.985-.066 12.698 12.698 0 014.575 6.832l.308 1.149 2.277-3.943a.75.75 0 111.299.75l-3.182 5.51a.75.75 0 01-1.025.275l-5.511-3.181a.75.75 0 01.75-1.3l3.943 2.277-.308-1.149a11.194 11.194 0 00-3.528-5.617l-3.809 3.81a.75.75 0 01-1.06 0L1.72 6.53a.75.75 0 010-1.061z"
+                        clip-rule="evenodd"></path>
+                    </svg><span>2% </span><span class="projected">below projected</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="box box1">
+                      <div id="spark1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3 pb-0">
+                <div class="row justify-content-between align-items-center">
+                  <p class="m-0 fw-semibold col-lg-6 p-0">Weekly Expenses</p>
+                  <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-5 Expenses p-0">
+                    <h3 class="mb-1 fs-4">$54,663.00</h3>
+                    <svg class="Monthly" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                      focusable="false">
+                      <path fill-rule="evenodd"
+                        d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                        clip-rule="evenodd"></path>
+                    </svg><span class="Monthly">4% </span><span class="projected"> above projected</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="box box1">
+                      <div id="spark2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3 pb-0">
+                <div class="row justify-content-between align-items-center">
+                  <p class="m-0 fw-semibold col-lg-6 p-0">Weekly Expenses</p>
+                  <div class="i-hover col-lg-1 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-5 Expenses p-0">
+                    <h3 class="mb-1 fs-4">$648,813.00</h3>
+                    <svg class="Monthly" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                      focusable="false">
+                      <path fill-rule="evenodd"
+                        d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                        clip-rule="evenodd"></path>
+                    </svg><span class="Monthly">3% </span><span class="projected"> above projected</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="box box1">
+                      <div id="spark3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h6 class="fs-6">Budget Details</h6>
+            <div class="Details d-flex py-3 border-bottom border-2 ps-3">
+              <div class="col-lg-2 fw-semibold">Type</div>
+              <div class="col-lg-2 fw-semibold">Total Budget</div>
+              <div class="col-lg-2 fw-semibold">Expenses (IJSD)</div>
+              <div class="col-lg-2 fw-semibold">Expenses (%)</div>
+              <div class="col-lg-2 fw-semibold">Remaining (USD)</div>
+              <div class="col-lg-2 fw-semibold">Remaining (%)</div>
+            </div>
+            <div class="Details d-flex py-3 border-bottom border-2 ps-2">
+              <div class="col-lg-2">
+                <img src="img/dot.png" alt="" style="width: 30px" />Concept
+              </div>
+              <div class="col-lg-2">$14,880.00</div>
+              <div class="col-lg-2">$14,ooo.oo</div>
+              <div class="col-lg-2">94.08%</div>
+              <div class="col-lg-2">$880.00</div>
+              <div class="col-lg-2">5.92%</div>
+            </div>
+            <div class="Details d-flex py-3 border-bottom border-2">
+              <div class="col-lg-2 ps-2 Design">
+                <img src="img/black-circle.png" alt="" style="width: 24px; padding: 0px 8px" />Design
+              </div>
+              <div class="col-lg-2">$21,080.00</div>
+              <div class="col-lg-2">$17,240.34</div>
+              <div class="col-lg-2">81.78%</div>
+              <div class="col-lg-2">$3,839.66</div>
+              <div class="col-lg-2">18.22%</div>
+            </div>
+            <div class="Details d-flex py-3 border-bottom border-2">
+              <div class="col-lg-2 ps-2 Design">
+                <img src="img/record-button.png" alt="" style="width: 25px; padding: 0px 6px 0px 8px" />
+                Development
+              </div>
+              <div class="col-lg-2">$34,720.00</div>
+              <div class="col-lg-2">$3,518.00</div>
+              <div class="col-lg-2">10.13%</div>
+              <div class="col-lg-2">$31,202.00</div>
+              <div class="col-lg-2">89.87%</div>
+            </div>
+            <div class="Details d-flex py-3 border-bottom border-2">
+              <div class="col-lg-2 ps-2 Design">
+                <img src="img/record-button (1).png" alt="" style="width: 25px; padding: 0px 6px 0px 8px" />
+                Extras
+              </div>
+              <div class="col-lg-2">$18,600.00</div>
+              <div class="col-lg-2">$0.00</div>
+              <div class="col-lg-2">0%</div>
+              <div class="col-lg-2">$18,600.00</div>
+              <div class="col-lg-2">100%</div>
+            </div>
+            <div class="Details d-flex py-3 border-2">
+              <div class="col-lg-2 ps-2 Design">
+                <img src="img/dot (1).png" alt="" style="width: 30px" />
+                Marketing
+              </div>
+              <div class="col-lg-2">$34,720.00</div>
+              <div class="col-lg-2">$19,859.84</div>
+              <div class="col-lg-2">57.2%</div>
+              <div class="col-lg-2">$14,860.16</div>
+              <div class="col-lg-2">42.8%</div>
+            </div>
+          </div>
+        </div>
+        <!-- third page third page -->
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <div class="row">
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/13.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/14.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/15.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/16.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/17.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/18.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/7.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/1.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-3">
+              <div class="card p-0 pt-1">
+                <div class="d-flex py-4 Nadia flex-column justify-content-center align-items-center">
+                  <img src="img/19.jpg" class="rounded-circle w-50" alt="" />
+                  <h3 class="mt-3 mb-0 fs-6">Nadia Mcknight</h3>
+                  <p>Project Director</p>
+                </div>
+                <div class="row hughes-coll">
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <a href="mailto:hughes.brian@company.com" class="text-black">Email</a>
+                  </div>
+                  <div
+                    class="col-lg-6 darke-border rounded-bottom py-3 border d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <a href="tel:+4733378901" class="text-black">Call</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- slide riet menu button -->
+  <div class="setting d-flex justify-content-center align-items-center rounded-start" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight" aria-controls="offcanvasWithBothOptions">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" fit=""
+      height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+      <path fill-rule="evenodd"
+        d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </div>
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header p-4 pe-5">
+      <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">
+        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+          aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <path fill-rule="evenodd"
+            d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Settings
+      </h5>
+      <button type="button" class="close-2" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body p-4">
+      <div class="d-flex flex-column">
+        <p class="THEME fs-6 fw-semibold mb-1">THEME</p>
+        <div class="mt-2">
+          <div class="row justify-content-between align-items-center pb-4 border-bottom border-2">
+            <div class="col-lg-4 ps-0">
+              <button
+                class="btn-2 mt-3 rounded-pill justify-content-center align-items-center d-flex flex-row border border-3">
+                <div class="dot me-2 rounded-circle dot-1"></div>
+                <p class="m-0">Default</p>
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <button class="btn-2 mt-3 rounded-pill justify-content-center align-items-center d-flex flex-row">
+                <div class="dot me-2 rounded-circle dot-2"></div>
+                <p class="m-0">Brand</p>
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <button class="btn-2 mt-3 rounded-pill justify-content-center align-items-center d-flex flex-row">
+                <div class="dot me-2 rounded-circle dot-3"></div>
+                <p class="m-0">Teal</p>
+              </button>
+            </div>
+            <div class="col-lg-4 ps-0">
+              <button class="btn-2 mt-3 rounded-pill justify-content-center align-items-center d-flex flex-row">
+                <div class="dot me-2 rounded-circle dot-4"></div>
+                <p class="m-0">Rose</p>
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <button class="btn-2 mt-3 rounded-pill justify-content-center align-items-center d-flex flex-row">
+                <div class="dot me-2 rounded-circle dot-5"></div>
+                <p class="m-0">Purple</p>
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <button class="btn-2 mt-3 rounded-pill justify-content-center align-items-center d-flex flex-row">
+                <div class="dot me-2 rounded-circle dot-6"></div>
+                <p class="m-0">Amber</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="THEME fs-6 fw-semibold mb-1">SCHEME</p>
+          <div class="row justify-content-between mt-3 pb-5 border-bottom border-2">
+            <button class="btn-10 inverted rounded-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" fit=""
+                height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+                <path fill-rule="evenodd"
+                  d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Auto
+            </button>
+            <button class="btn-12 btn-dark-mode inverted rounded-pill">
+              <svg class="pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                focusable="false">
+                <path fill-rule="evenodd"
+                  d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Dark
+            </button>
+            <button class="btn-10 btn-light-mode inverted rounded-pill">
+              <svg class="pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                focusable="false">
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                </path>
+              </svg>
+              Light
+            </button>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="THEME fs-6 fw-semibold mb-1">LAYOUT</p>
+          <div class="Screenshot mt-4">
+            <img src="img/Screenshot 2024-02-12 1543202.png" alt="" />
+            <img src="img/Screenshot 2024-02-12 1551306.png" alt="" />
+          </div>
+          <div class="Screenshot-2 mt-4">
+            <img src="img/darke.png" alt="" />
+            <img src="img/darke-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- company workers -->
+  <section class="company-workers d-flex flex-column justify-content-center align-items-center">
+    <div class="preserveAspectRatio">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155">
+        </path>
+      </svg>
+    </div>
+    <div class="main-company">
+      <div class="company-workers-img mt-2">
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/2.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/3.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/4.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/5.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/6.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/7.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/8.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/9.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/10.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/11.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/3.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/5.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/7.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/9.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/11.jpg" alt="" />
+      </div>
+      <div class="company-workers-img">
+        <img src="img/12.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+    <!-- script -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/apexcharts.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".menu-icon").click(function () {
+        $("#navigator").toggleClass("side-left");
+        $(".main").toggleClass("main-margin-0");
+        $(".menu-icon").toggleClass("btn-left");
+        $(".Welcome-back-Brian").toggleClass("Welcome-back-Brian-padding");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#click").click(function () {
+        $(".arrow").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-2").click(function () {
+        $(".arrow-2").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-3").click(function () {
+        $(".arrow-3").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-4").click(function () {
+        $(".arrow-4").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-5").click(function () {
+        $(".arrow-5").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-6").click(function () {
+        $(".arrow-6").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-7").click(function () {
+        $(".arrow-7").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-8").click(function () {
+        $(".arrow-8").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-9").click(function () {
+        $(".arrow-9").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-10").click(function () {
+        $(".arrow-10").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-11").click(function () {
+        $(".arrow-11").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $("#click-12").click(function () {
+        $(".arrow-12").toggleClass("rotate");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".Backend-app").click(function () {
+        $(".Backend-app-NONE").toggleClass("Backend-app-active");
+      });
+    });
+    $(document).ready(function () {
+      $(".menu-icon").click(function () {
+        $(".Backend-app-active").toggleClass("Backend-app-active-2");
+      });
+    });
+  </script>
+  <script>
+    var options = {
+      series: [
+        {
+          name: "Closed issue",
+          type: "column",
+          data: [11, 10, 8, 11, 8, 10, 17],
+        },
+        {
+          name: "New issues",
+          type: "line",
+          data: [42, 28, 43, 34, 20, 25, 22],
+        },
+      ],
+      chart: {
+        height: 350, 
+        type: "line",
+      },
+      stroke: {
+        width: [0,3],
+        colors: ['#7b899c'],
+      },
+      dataLabels: {
+        enabled: true,
+        enabledOnSeries: [1],
+      },
+      labels: [
+        "Mon",
+        "Tues",
+        "Wednes",
+        "Thurs",
+        "Fri",
+        "Satur",
+        "Sun",
+      ],
+      xaxis: {
+        type: "days",
+      },
+      colors: ['#95a0b0', '#95a0b0', '#95a0b0', '#95a0b0', '#95a0b0','#95a0b0','#95a0b0'],
+    };
+    var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+    chart.render();
+  </script>
+  <script>
+    var options = {
+      series: [15, 20, 38, 27],
+      chart: {
+        type: "polarArea",
+      },
+      stroke: {
+        colors: ["#5c7b9e"],
+      },
+      colors: ["#cae3fe", "#bcd1e7", "#afbed0", "#a1acb9"],
+      fill: {
+        opacity: 0.6,
+        colors: ["#cae3fe", "#bcd1e7", "#afbed0", "#a1acb9"],
+      },
+      responsive: [
+        {
+          breakpoint: 100,
+          options: {
+            chart: {
+              width: 100,
+            },
+            legend: {
+              position: "top",
+            },
+          },
+        },
+      ],
+    };
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  </script>
+  <script>
+    var options = {
+      series: [
+        {
+          name: "Series 1",
+          data: [12, 20, 28, 15, 25],
+        },
+      ],
+      chart: {
+        height: 450,
+        type: "radar",
+      },
+      dataLabels: {
+        enabled: true,
+      },
+      plotOptions: {
+        radar: {
+          size: 140,
+          polygons: {
+            strokeColors: "#e3e9f1",
+            fill: {
+              colors: ["var(--colors-)", "var(--colors-)"],
+            },
+          },
+        },
+      },
+      colors: ["#818cf8"],
+      markers: {
+        size: 4,
+        colors: ["#fff"],
+        strokeColor: "#818cf8",
+        strokeWidth: 9,
+      },
+      tooltip: {
+        y: {
+          formatter: function (val) {
+            return val;
+          },
+        },
+      },
+      xaxis: {
+        categories: [
+          "Concept",
+          "Design",
+          "Development",
+          "Extras",
+          "Marketing",
+        ],
+      },
+      yaxis: {
+        tickAmount: 7,
+        labels: {
+          formatter: function (val, i) {
+            if (i % 2 === 0) {
+              return val;
+            } else {
+              return "";
+            }
+          },
+        },
+      },
+    };
+    var chart = new ApexCharts(document.querySelector("#chart-9"), options);
+    chart.render();
+  </script>
+  <script>
+    window.Apex = {
+      dataLabels: {
+        enabled: false,
+      },
+    };
+    var spark1 = {
+      chart: {
+        id: "sparkline1",
+        type: "line",
+        height: 110,
+        sparkline: {
+          enabled: true,
+        },
+        group: "sparklines",
+      },
+      series: [
+        {
+          name: "purple",
+          data: [18, 17.7, 18.5, 19, 17.5, 17],
+        },
+      ],
+      stroke: {
+        curve: "smooth",
+      },
+      markers: {
+        size: 0,
+      },
+      tooltip: {
+        fixed: {
+          enabled: true,
+          position: "right",
+        },
+        x: {
+          show: false,
+        },
+      },
+      title: {
+        style: {
+          fontSize: "26px",
+        },
+      },
+      colors: ["#44d9f0"],
+    };
+    var spark2 = {
+      chart: {
+        id: "sparkline2",
+        type: "line",
+        height: 110,
+        sparkline: {
+          enabled: true,
+        },
+        group: "sparklines",
+      },
+      series: [
+        {
+          name: "green",
+          data: [20, 19, 21, 20],
+        },
+      ],
+      stroke: {
+        curve: "smooth",
+      },
+      markers: {
+        size: 0,
+      },
+      tooltip: {
+        fixed: {
+          enabled: true,
+          position: "right",
+        },
+        x: {
+          show: false,
+        },
+      },
+      title: {
+        style: {
+          fontSize: "26px",
+        },
+      },
+      colors: ["#66e393"],
+    };
+    var spark3 = {
+      chart: {
+        id: "sparkline3",
+        type: "line",
+        height: 120,
+        sparkline: {
+          enabled: true,
+        },
+        group: "sparklines",
+      },
+      series: [
+        {
+          name: "red",
+          data: [47, 35, 45, 32, 56, 31, 44, 33, 45, 19],
+        },
+      ],
+      stroke: {
+        curve: "smooth",
+      },
+      markers: {
+        size: 0,
+      },
+      tooltip: {
+        fixed: {
+          enabled: true,
+          position: "right",
+        },
+        x: {
+          show: false,
+        },
+      },
+      colors: ["#fc8697"],
+      title: {
+        style: {
+          fontSize: "26px",
+        },
+      },
+      xaxis: {
+        crosshairs: {
+          width: 1,
+        },
+      },
+    };
+    new ApexCharts(document.querySelector("#spark1"), spark1).render();
+    new ApexCharts(document.querySelector("#spark2"), spark2).render();
+    new ApexCharts(document.querySelector("#spark3"), spark3).render();
+  </script>
+  <script>
+    const darkBtn = document.querySelector(".btn-dark-mode"),
+      lightBtn = document.querySelector(".btn-light-mode"),
+      body = document.querySelector("body");
+
+    function toggleModeHandler(event) {
+      if (event.target.classList.contains("btn-dark-mode")) {
+        if (!body.classList.contains("dark-mode")) {
+          body.classList.add("dark-mode");
+        }
+      } else {
+        if (body.classList.contains("dark-mode")) {
+          body.classList.remove("dark-mode");
+        }
+      }
+    }
+    darkBtn.addEventListener("click", toggleModeHandler);
+    lightBtn.addEventListener("click", toggleModeHandler);
+  </script>
+</body>
+</html>
